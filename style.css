@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+/* color https://colorhunt.co/palette/f1f6f914274e3948679ba4b4 */
+
+:root {
+    --background-color-main: #14274E ;
+    --color-sub1: #394867 ;
+    --color-sub2: #9BA4B4 ;
+    --font-color-main: #F1F6F9 ;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+    background-color: var(--background-color-main);
+}
+
+header {
+    max-width: 868px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 5dvh;
+    border-radius: 80px;
+}
+header .btn-header,button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: #dfdfdf;
+    border-radius: 100%;
+}
+
+.main-item-header {
+    color: var(--font-color-main);
+}
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.main-item {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-header {
+    padding: 10px;
+}
+
+.main-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    margin: 10px;
+}
+
+.main-item-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-data {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.main-data h1 {
+    text-align: center;
+    font-size: 24px;
+    color: var(--color-sub1);
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: var(--color-sub1);
+    border-radius: 5px;
+    transition: ease-in-out 0.8s;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+            color: var(--font-color-main);
+    }
+
+    a:hover {
+            color: var(--font-color-main);
+    }
+
+}
+
+.main-content:hover{
+    
+    background-color: var(--color-sub2);
+
+    a {
+        color: var(--color-sub1);
+    }
+}
+
+.main-content .btn-main,button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: none;
+    border-radius: 100%;
+    color: var(--background-color-main);
+}
+
+i, .fa-brands {
+    color: var(--background-color-main);
+}
+.main-content i,p {
+    height: fit-content;
+}
+
+/* === footer === */
+/* === ส่วนด้านล่างสุด === */
+
+.item-footer{
+    margin: 10dvh 0px 5dvh;
+    cursor: pointer;
+
+    a {
+        text-decoration: none;
+        color: var(--color-sub1);
+        transition: ease-in-out 0.9s;
+    }
+}
+
+.item-footer, a:hover{
+    color: var(--font-color-main);
+    
+}
+
+/** === responsive === **/
+/** === ทําให้รองรับทุกขนาดหน้าจอ === **/
+
+@media screen and (width < 400px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .main-content {
+        width: 300px;
+    }
+
+    .item-footer {
+        margin: 0px;
+    }
+}
